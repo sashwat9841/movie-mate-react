@@ -36,6 +36,27 @@ password
 
 -->
 
-    Hi
+    <form onclick="formSubmission();return false;" id="contactForm">
+      <label>Full name</label>
+      <input type="text" name="fullName" />
+      <br />
+      <label>Email</label>
+      <input type="email" name="email" />
+      <br />
+      <label>Date</label>
+      <input type="date" name="date " />
+      <br />
+      <label>Choose your country</label>
+      <select name="country">
+        <option value="">Choose your country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="UK">UK</option>
+      </select>
+      <br />
+      <textarea rows="10" cols="100" name="message"></textarea>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <script src="index.js"></script>
   </body>
 </html>
